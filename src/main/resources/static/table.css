@@ -1,0 +1,113 @@
+
+
+
+.full_page{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../templates/image/cup-coffee-with-pile-coffee-beans2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+}
+
+body {
+
+    font-family: "Helvetica Neue", Helvetica, Arial;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: gold;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    /*background:url(../pictures/abstract-green-background-free-vector.jpg);*/
+
+}
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+}
+
+.wrapper {
+    margin: 0 50px;
+    padding: 100px;
+    max-width: 900px;
+}
+
+.table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px brown;
+    display: table;
+    border: none;
+
+}
+@media screen and (max-width: 580px) {
+    .table {
+        display: block;
+    }
+}
+
+.row {
+    display: table-row;
+    background: transparent;
+}
+/*.row:nth-of-type() {*/
+/*    background: #fff;*/
+/*}*/
+.row.header {
+    font-weight: 900;
+    color: black;
+    background: transparent;
+    border: none;
+}
+.row.green {
+    background: transparent;
+}
+.row.blue {
+    background: transparent;
+}
+@media screen and (max-width: 580px) {
+    .row {
+        padding: 20px 0 7px;
+        display: block;
+    }
+    .row.header {
+        padding: 0;
+        height: 20px;
+    }
+    .row.header .cell {
+        display: none;
+    }
+    .row .cell {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .row .cell:before {
+        margin-bottom: 3px;
+        content: attr(data-title);
+        min-width: 98px;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #969696;
+        display: block;
+    }
+}
+
+.cell {
+    padding: 6px 15px;
+    display: table-cell;
+    background: transparent;
+}
+@media screen and (max-width: 580px) {
+    .cell {
+        padding: 2px 16px;
+        display: block;
+    }
+}
