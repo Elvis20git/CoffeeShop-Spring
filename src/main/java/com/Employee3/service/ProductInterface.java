@@ -4,7 +4,7 @@ import com.Employee3.model.Product;
 
 import java.util.List;
 
-public interface ProductInterface {
+public interface  ProductInterface {
 
     Product registerProduct(Product prod);
     Product updateProduct(Product prod);

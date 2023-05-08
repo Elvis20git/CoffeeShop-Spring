@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>[[${RegistrationPage}]]</title>
+    <title>Update_Page</title>
     <link rel="stylesheet" href="../static/style.css">
     <style>
 
@@ -61,7 +61,7 @@
             width: 100%;
             height: 100vh;
             /*background: url(image/cup-coffee-with-pile-coffee-beans2.jpg) no-repeat;*/
-            background: green;
+            background: #71412a;
             background-size: cover;
             background-position: center;
             display: flex;
@@ -236,17 +236,17 @@
     <div class="content">
         <h2>Coffee Build Your Mind</h2>
         <p>I was taken by the power that savoring a simple cup of coffee can have to connect people and create community</p>
-        <a href="#">Get Started</a>
+
 
     </div>
 
     <div class="wrapper-login">
-        <h2>RegistrationPage</h2>
+        <h2>Update_Product</h2>
         <form  method="post" th:action="@{/registerProduct}" th:object="${product}">
             <div class="input-box">
                 <span class="icon"></span>
-                <input type="number" th:field="*{id}"name="id"required/> </br>
-                <label>Id</label>
+                <input hidden="hidden" th:field="*{id}"/> </br>
+<!--                <label>Id</label>-->
             </div>
 
             <div class="input-box">
@@ -268,14 +268,11 @@
                 <label>Quantity</label>
             </div>
 
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
+
             <button type="submit" class="btn">Update</button>
-            <div class="register-link">
-                <p>Not a Member? <a href="#">Sign_Up now</a> </p>
-            </div>
+<!--            <div class="register-link">-->
+<!--                <p>Not a Member? <a href="#">Sign_Up now</a> </p>-->
+<!--            </div>-->
 
 
         </form>
